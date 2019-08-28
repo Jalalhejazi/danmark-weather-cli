@@ -13,8 +13,7 @@
   "main": "test.js",
   "scripts": {
     "test": "node test.js",
-    "publish": "np",
-    "postpublish": "git push"
+    "publish": "np"
   },
   "devDependencies": {
     "np": "^5.0.3"
