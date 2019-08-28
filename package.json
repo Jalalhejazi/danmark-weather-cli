@@ -13,10 +13,10 @@
   "main": "test.js",
   "scripts": {
     "test": "node test.js",
-    "publish" :"np patch"
+    "publish": "np patch"
   },
   "devDependencies": {
-    "np":"^5.0.3"
+    "np": "^5.0.3"
   },
   "repository": {
     "type": "git",
