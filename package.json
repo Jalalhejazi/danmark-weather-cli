@@ -1,0 +1,22 @@
+{
+  "name": "about-semantic-versioning-demo-2019",
+  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
+  "version": "1.0.0",
+  "dependencies": {
+    "colors": "^1.0.3"
+  },
+  "description": "A demo package for learning semantic versioning",
+  "keywords": [
+    "semantic versioning"
+  ],
+  "license": "ISC",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/about-semantic-versioning-demo-2019"
+  }
+}
