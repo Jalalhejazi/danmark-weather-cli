@@ -1,7 +1,7 @@
 ## About Semantic Versioning
 
 ```
-npm install about-semantic-versioning-demo-2019
+npm install superusers-semversion-demo
 
 
 ```

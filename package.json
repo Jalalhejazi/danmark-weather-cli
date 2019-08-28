@@ -13,6 +13,7 @@
   "main": "test.js",
   "scripts": {
     "test": "node test.js",
+    "prepublish": "git push",
     "publish": "np patch"
   },
   "devDependencies": {
