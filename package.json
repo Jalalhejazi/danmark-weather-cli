@@ -1,7 +1,7 @@
 {
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "dependencies": {
     "colors": "^1.0.3"
   },
