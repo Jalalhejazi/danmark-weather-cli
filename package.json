@@ -12,11 +12,14 @@
   "license": "ISC",
   "main": "test.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "publish" :"np patch"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "np":"^5.0.3"
+  },
   "repository": {
     "type": "git",
-    "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/about-semantic-versioning-demo-2019"
+    "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/about-semantic-versioning-demo-2019/"
   }
 }
