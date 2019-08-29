@@ -52,4 +52,20 @@ steps:
   displayName: 'Publish npm artifact'
 
 
+# Release
+steps:
+- task: ExtractFiles@1
+  displayName: 'Extract files '
+  inputs:
+    archiveFilePatterns: '*.tgz'
+    destinationFolder: '$(Build.ArtifactStagingDirectory)/npm-publish'
+
+steps:
+- task: Npm@1
+  displayName: 'npm publish'
+  inputs:
+    command: publish
+    workingDir: '$(Build.ArtifactStagingDirectory)/npm-publish/package'
+    verbose: false
+    publishEndpoint: 'npm-registry-jalalhejazi'
 
