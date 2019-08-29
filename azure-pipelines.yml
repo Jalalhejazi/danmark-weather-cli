@@ -17,9 +17,8 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install dependency from package.json'
 
 - script: |
     npm pack
-  displayName: 'Package for npm release'
+  displayName: 'Package for npm release (generates .tgz file)'
