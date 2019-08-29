@@ -42,3 +42,11 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'
+
+steps:
+- bash: |
+   v=`node -p "const p = require('./package.json'); p.version;"`
+   echo "##vso[task.setvariable variable=packageVersion]$v"
+   
+  workingDirectory: '$(Build.ArtifactStagingDirectory)/npm'
+  displayName: 'show packageVersion'
