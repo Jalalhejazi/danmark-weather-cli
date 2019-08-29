@@ -6,7 +6,7 @@ const container = {
 
 	helloWorld : (color='red', msg) => console.log(config.version, msg[color]),
 
-	helloWorld2 : (msg) => console.log(config.version, msg)
+	helloWorld2 : (color='red', msg) => console.log(config.version[color], msg[color])
 }
 
 
