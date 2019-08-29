@@ -18,6 +18,5 @@ steps:
 - script: |
     npm install
     npm run test
-    npm run refreshVSToken
     npm run publish
   displayName: 'npm install and test'
