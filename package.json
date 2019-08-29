@@ -13,12 +13,12 @@
   "main": "test.js",
   "scripts": {
     "test": "node test.js",
-    "refreshVSToken" : "vsts-npm-auth -config .npmrc",
+    "refreshVSToken": "vsts-npm-auth -config .npmrc",
     "publish": "np"
   },
   "devDependencies": {
     "np": "^5.0.3",
-    "vsts-npm-auth":"^0.37.0"
+    "vsts-npm-auth": "^0.37.0"
   },
   "repository": {
     "type": "git",
