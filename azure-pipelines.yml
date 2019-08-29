@@ -28,7 +28,7 @@ steps:
   displayName: 'Run Test'
 
 
-  - script: |
+- script: |
     package_version=$(node -p "require('./package.json').version")
     echo "The value of the global variable package_version=$package_version"
   displayName: 'node exec --> show $package_version'
