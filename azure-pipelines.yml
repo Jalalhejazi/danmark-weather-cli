@@ -74,6 +74,7 @@ steps:
     verbose: false
     publishEndpoint: 'npm-registry-jalalhejazi'
 
+- task: NodeTool@0
 - script: |
     echo "Release: $npm_release_url@$package_version"
   displayName: 'show final release address'
