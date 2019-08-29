@@ -1,13 +1,13 @@
 # Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+# Build a Node.js project with npm.
+# Publish to https://www.npmjs.com/package/superusers-semversion-demo
+
 
 trigger:
 - master
 
 variables:
-  package_version: 'x.y.z'    
+  package_version: 'Broken.Feature.Bug'    
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -36,14 +36,14 @@ steps:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: '*.tgz' 
     targetFolder: $(Build.ArtifactStagingDirectory)/npm
-  displayName: 'Copy npm package'
+  displayName: 'Copy the generated .tgz file to /npm folder'
 
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: 'package.json' 
     targetFolder: $(Build.ArtifactStagingDirectory)/npm
-  displayName: 'Copy package.json'
+  displayName: 'Copy package.json to /npm folder'
 
 - task: PublishBuildArtifacts@1
   inputs:
@@ -66,4 +66,3 @@ steps:
     workingDir: '$(Build.ArtifactStagingDirectory)/npm-publish/package'
     verbose: false
     publishEndpoint: 'npm-registry-jalalhejazi'
-
