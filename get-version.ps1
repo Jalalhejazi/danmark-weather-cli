@@ -1,3 +1,3 @@
-$package_version=node -e "console.log(require('./package.json').version)"
+$package_version=node -pe "console.log(require('./package.json').version)"
 
-$package_version
+Write-Host $package_version -ForegroundColor Green
