@@ -1,25 +1,23 @@
 {
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
+  "description": "A demo package for learning semantic versioning",
   "version": "1.0.18",
   "dependencies": {
     "colors": "^1.0.3"
   },
-  "description": "A demo package for learning semantic versioning",
+  "devDependencies": {
+    "np": "^5.0.3"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "publish": "np patch"
+  },
   "keywords": [
     "semantic versioning"
   ],
   "license": "ISC",
   "main": "test.js",
-  "scripts": {
-    "test": "node test.js",
-    "refreshVSToken": "vsts-npm-auth -config .npmrc",
-    "publish": "np"
-  },
-  "devDependencies": {
-    "np": "^5.0.3",
-    "vsts-npm-auth": "^0.37.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/about-semantic-versioning-demo-2019/"
