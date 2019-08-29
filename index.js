@@ -1,4 +1,3 @@
-const colors = require('colors')
 const fetch  = require('node-fetch')
 
 const config = require('./package')
