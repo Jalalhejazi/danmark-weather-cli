@@ -8,7 +8,7 @@ git commit -am "$message"
 
 npm version patch 
 
-git push origin master --force --follow-tags --quite
+git push origin master --force --follow-tags --quiet
 
 $package_version = node -p "require('./package.json').version"
 Write-Host  "Releasing Version: $package_version" -ForegroundColor Green
