@@ -6,10 +6,14 @@
   "dependencies": {
     "colors": "^1.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "yaml-lint": "^1.2.4"
+  },
   "scripts": {
     "test": "node test.js",
-    "git-patching": "npm version patch && git push origin master --force --follow-tags"
+    "lint": "yamllint ./azure-pipelines.yml",
+    "predeploy":"npm run lint",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1"
   },
   "keywords": [
     "semantic versioning"
