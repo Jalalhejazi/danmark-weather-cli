@@ -2,7 +2,7 @@
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "description": "A demo package for learning semantic versioning",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "dependencies": {
     "colors": "^1.0.3"
   },
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "node test.js",
-    "git-push":"npm version patch && git push origin master --force --follow-tags"
+    "git-push": "npm version patch && git push origin master --force --follow-tags"
   },
   "keywords": [
     "semantic versioning"
