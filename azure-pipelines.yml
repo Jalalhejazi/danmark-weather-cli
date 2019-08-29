@@ -21,7 +21,7 @@ steps:
 
 - script: |
     npm install --production
-  displayName: 'npm install dependency from package.json'
+  displayName: 'npm install --production dependency'
 
 
 - script: |
