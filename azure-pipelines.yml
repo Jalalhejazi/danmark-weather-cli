@@ -15,14 +15,20 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '12.x'
   displayName: 'Install Node.js'
 
 - script: |
     npm install
   displayName: 'npm install dependency from package.json'
 
+
 - script: |
+    npm test
+  displayName: 'Run Test'
+
+
+  - script: |
     package_version=$(node -p "require('./package.json').version")
     echo "The value of the global variable package_version=$package_version"
   displayName: 'node exec --> show $package_version'
