@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "node test.js",
-    "git-push": "npm version patch && git push origin master --force --follow-tags"
+    "git-patching": "npm version patch && git push origin master --force --follow-tags"
   },
   "keywords": [
     "semantic versioning"
