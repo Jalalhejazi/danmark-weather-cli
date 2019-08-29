@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "node test.js",
-    "version": "node -e \"console.log(require('./package.json').version)\" ",
+    "v1": "node -e \"console.log(require('./package.json').version)\" ",
     "git-patching": "npm version patch && git push origin master --force --follow-tags"
   },
   "keywords": [
