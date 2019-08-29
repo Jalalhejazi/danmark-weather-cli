@@ -53,14 +53,12 @@ steps:
 
 
 # Release
-steps:
 - task: ExtractFiles@1
   displayName: 'Extract files '
   inputs:
     archiveFilePatterns: '*.tgz'
     destinationFolder: '$(Build.ArtifactStagingDirectory)/npm-publish'
 
-steps:
 - task: Npm@1
   displayName: 'npm publish'
   inputs:
