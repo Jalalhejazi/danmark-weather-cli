@@ -42,11 +42,3 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'
-
-- task: show packageVersion
-- powershell: |
-   $PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
-   echo $PACKAGE_VERSION
-   
-  workingDirectory: '$(Build.ArtifactStagingDirectory)/npm'
-  displayName: 'show packageVersion'
