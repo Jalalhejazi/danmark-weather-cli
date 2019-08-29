@@ -1,12 +1,26 @@
 const colors = require('colors')
-const config = require('./package')
+const fetch  = require('node-fetch')
 
+const config = require('./package')
 
 const container = {
 
-	helloWorld : (color='red', msg) => console.log(config.version, msg[color]),
+	weather : function(onSuccess){
+		const URL    = 'http://www.henrikdemant.com/weather/realtime.txt'
 
-	helloWorld2 : (color='red', msg) => console.log(config.version[color], msg[color])
+		let response = fetch(URL)
+		.then( res  => res.text())
+		.then( data => {
+			const temperaturArray  = data.split(/(\s+)/)
+			const temperaturObject = {
+				Version         : config.version,
+			 	Dato    		: temperaturArray[0],
+			 	Tid     		: temperaturArray[2],
+			 	temperatur 		: temperaturArray[4]
+			}
+				onSuccess (temperaturObject)
+			})
+	}
 }
 
 
