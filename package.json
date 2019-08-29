@@ -2,7 +2,7 @@
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "description": "A demo package for learning semantic versioning",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "dependencies": {
     "colors": "^1.0.3"
   },
