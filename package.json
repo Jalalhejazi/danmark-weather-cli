@@ -1,7 +1,7 @@
 {
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
-  "version": "1.0.7",
+  "version": "1.0.18",
   "dependencies": {
     "colors": "^1.0.3"
   },
@@ -13,10 +13,12 @@
   "main": "test.js",
   "scripts": {
     "test": "node test.js",
+    "refreshVSToken" : "vsts-npm-auth -config .npmrc",
     "publish": "np"
   },
   "devDependencies": {
-    "np": "^5.0.3"
+    "np": "^5.0.3",
+    "vsts-npm-auth":"^0.37.0"
   },
   "repository": {
     "type": "git",
