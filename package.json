@@ -2,7 +2,7 @@
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "description": "A demo package for learning semantic versioning",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "dependencies": {
     "colors": "^1.0.3"
   },
@@ -10,8 +10,7 @@
     "np": "^5.0.3"
   },
   "scripts": {
-    "test": "node test.js",
-    "publish": "np patch"
+    "test": "node test.js"
   },
   "keywords": [
     "semantic versioning"
