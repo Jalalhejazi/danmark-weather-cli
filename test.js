@@ -1,11 +1,9 @@
-const vejret = require('./lib/weather')
-const pkg = require('./package')
+require('./lib/weather') ( test => {
 
-vejret( (d) => {
-    if (d.Lokation == 'Odense') {
-    const message =  `package version: ${pkg.version}
-vejret: ${JSON.stringify(d)}        
-    `
-        console.log(message)
+    if (test.weather.location == 'DK') {
+        console.log("Test OK")
+    }else {
+        console.log("Test Not OK")
     }
+
 })

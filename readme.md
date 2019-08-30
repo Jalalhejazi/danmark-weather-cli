@@ -7,26 +7,34 @@
 [![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/about-semantic-versioning-demo-2019?branchName=master)](https://dev.azure.com/superusers-kursus/nodejs/_build/latest?definitionId=34&branchName=master)
 
 
-## How to install, update and test
+## Install
 
 ```
 npm install superusers-semversion-demo
 
-npm version
-npm outdated
-npm update | node .\node_modules\superusers-semversion-demo\test.js  
+```
+
+## Use from PowerShell
+
+```
+node -p "require('superusers-semversion-demo')"
+
+$weather = node -p "require('superusers-semversion-demo')"
+
+echo $weather
 
 ```
 
 
-## How to use
+## Use from Bash
 
 ```
-const  weather = require('./lib/weather')
+node -p "require('superusers-semversion-demo')"
 
-weather( (d) => console.log(d) )
+weather = node -p "require('superusers-semversion-demo')"
+
+echo $weather
 
 ```
-
 
 

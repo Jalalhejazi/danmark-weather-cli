@@ -1,3 +1,1 @@
-const  vejret = require('./lib/weather')
-
-vejret( (d) => console.log(d) )
+require('./lib/weather') ( (d) => console.log(d) )
