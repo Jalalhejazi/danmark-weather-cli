@@ -1,6 +1,6 @@
 
 $org = "https://dev.azure.com/superusers-kursus"
-$work = "danmark-weather-info"
+$work = "nodejs"
 az devops configure --defaults organization=$org project=$work
 
 ## az pipelines build list --top 1 -o table 
