@@ -11,8 +11,10 @@
   },
   "scripts": {
     "test": "node test.js",
-    "lint": "yamllint ./azure-pipelines.yml",
-    "predeploy": "npm run lint",
+    "version":"npm view ./package.json version" ,
+    "version-patch":"npm version patch",
+    "validation": "yamllint ./azure-pipelines.yml",
+    "predeploy": "npm run validation",
     "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1"
   },
   "keywords": [

@@ -22,9 +22,9 @@ npm update | node .\node_modules\superusers-semversion-demo\test.js
 ## How to use
 
 ```
-const dev=require('superusers-semversion-demo')
+const  weather = require('./lib/weather')
 
-dev.weather( dk => console.log(dk)  )
+weather( (d) => console.log(d) )
 
 ```
 
