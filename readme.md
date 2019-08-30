@@ -1,40 +1,30 @@
-## About Semantic Versioning
+## About danmark-weather-info
 
-- This repo is Proof Of Concept for Azure Pipeline deployment to NPM registry
+- Shows very simple and basic weather in Denmark 
+
+- using Azure DevOps pipeline 
+
+- using powershell automation 
+
+
 
 ## Build Status
 
-[![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/about-semantic-versioning-demo-2019?branchName=master)](https://dev.azure.com/superusers-kursus/nodejs/_build/latest?definitionId=34&branchName=master)
+[![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/danmark-weather-info?branchName=master)]()
 
 
 ## Install
 
 ```
-npm install superusers-semversion-demo
+npm install danmark-weather-info
 
 ```
 
 ## Use from PowerShell
 
 ```
-node -p "require('superusers-semversion-demo')"
-
-$weather = node -p "require('superusers-semversion-demo')"
+$weather = node -p "require('danmark-weather-info')"
 
 echo $weather
 
 ```
-
-
-## Use from Bash
-
-```
-node -p "require('superusers-semversion-demo')"
-
-weather = node -p "require('superusers-semversion-demo')"
-
-echo $weather
-
-```
-
-

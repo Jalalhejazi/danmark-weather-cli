@@ -1,6 +1,6 @@
 # Node.js
 # Build a Node.js project with npm.
-# Publish to https://www.npmjs.com/package/superusers-semversion-demo
+# Publish to https://www.npmjs.com/package/danmark-weather-info
 
 
 trigger:
@@ -8,7 +8,7 @@ trigger:
 
 variables:
   package_version: 'Broken.Feature.Bug'    
-  npm_release_url: 'https://www.npmjs.com/package/superusers-semversion-demo'
+  npm_release_url: 'https://www.npmjs.com/package/danmark-weather-info'
 
 pool:
   vmImage: 'ubuntu-latest'

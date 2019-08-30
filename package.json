@@ -1,7 +1,7 @@
 {
-  "name": "superusers-semversion-demo",
-  "description": "using semantic versioning",
-  "version": "2.1.2",
+  "name": "danmark-weather-info",
+  "description": "danmark weather information",
+  "version": "1.0.0",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
@@ -28,8 +28,11 @@
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "license": "ISC",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "repository": {
     "type": "git",
-    "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/about-semantic-versioning-demo-2019/"
+    "url": "https://superusers-kursus@dev.azure.com/superusers-kursus/nodejs/_git/danmark-weather-info"
   }
 }
