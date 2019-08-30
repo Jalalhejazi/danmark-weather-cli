@@ -10,7 +10,7 @@
 
 ## Build Status
 
-[![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/danmark-weather-info?branchName=master)]()
+[![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/danmark-weather-info?branchName=master)](https://dev.azure.com/superusers-kursus/nodejs/_build/latest?definitionId=36&branchName=master)
 
 
 ## Install
