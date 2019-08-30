@@ -1,5 +1,5 @@
-# Powershell 
-# semantic git deploy 
+# Opinionated semantic-git-deploy 
+
 param( 
     [Parameter(Mandatory=$false)] 
     [String] [ValidateSet("broken","feature","fix")] 
