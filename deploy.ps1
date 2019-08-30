@@ -4,10 +4,15 @@ param(
     [Parameter(Mandatory=$false)] 
     [String] [ValidateSet("broken","feature","fix")] 
     $version  = "fix"  
+
+    ,    
+    [Parameter(Mandatory=$false)] 
+    [String] 
+    $anyMessage = ""  
 )
 
 git add .
-git commit -am $version
+git commit -m "$version $anyMessage"
 
 switch ($version) {
     "broken"  { npm version major }
