@@ -1,6 +1,5 @@
 {
   "name": "superusers-semversion-demo",
-  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "description": "using semantic versioning",
   "version": "1.1.8",
   "dependencies": {
@@ -11,18 +10,20 @@
   },
   "scripts": {
     "test": "node test.js",
-    "version-latest": "npm view ./package.json version",
+    "version-production": "npm view ./package.json version",
     "version-patch": "npm version patch",
     "version-minor": "npm version minor",
     "version-major": "npm version major",
     "version-git": "npm version from-git --allow-same-version",
     "validation": "yamllint ./azure-pipelines.yml",
     "predeploy": "npm run validation",
-    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1"
+    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1",
+    "devops-status":"powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
   },
   "keywords": [
     "semantic versioning"
   ],
+  "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "license": "ISC",
   "main": "index.js",
   "repository": {
