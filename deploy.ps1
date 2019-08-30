@@ -1,14 +1,19 @@
 # Powershell 
 # semantic git deploy 
-param( $message = "Fix" )
+param( 
+    [Parameter(Mandatory=$false)] 
+    [String] [ValidateSet("broken","feature","fix")] 
+    $version  = "fix"  
+)
 
 git add .
+git commit -am $version
 
-git commit -am "$message"
-
-npm version patch 
+switch ($version) {
+    "broken"  { npm version major }
+    "feature" { npm version minor }
+    Default   { npm version patch }
+}
 
 git push origin master --force --follow-tags --quiet
 
-$package_version = node -p "require('./package.json').version"
-Write-Host  "Releasing Version: $package_version" -ForegroundColor Green

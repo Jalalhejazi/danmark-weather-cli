@@ -17,7 +17,9 @@
     "version-git": "npm version from-git --allow-same-version",
     "validation": "yamllint ./azure-pipelines.yml",
     "predeploy": "npm run validation",
-    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 fix",
+    "deploy-feature": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 feature ",
+    "deploy-broken": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1 broken ",
     "devops-status": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
   },
   "keywords": [
