@@ -18,6 +18,6 @@
 ```
 npm install danmark-weather-info --global
 
-danmark-weather-info --help
+weather --help
 
 ```

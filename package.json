@@ -4,13 +4,13 @@
   "version": "2.3.3",
   "main": "cli.js",
   "bin": {
-    "vejret": "cli.js"
+    "weather": "cli.js"
   },
   "engines": {
     "node": ">=10.10.0"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
+    "commander": "^3.0.1",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {

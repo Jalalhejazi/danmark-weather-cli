@@ -1,23 +1,19 @@
-const argv = require('minimist')(process.argv.slice(2));
+#!/usr/bin/env node
 
-const pkg  = require('./package')
-const f    = require('./lib/weather') 
+const program = require('commander');
+const pkg     = require('./package');
 
-if(argv.help)
-{
-    let helpMessage =`
-                ${pkg.name} --temp
-                ${pkg.name} --version
-                ${pkg.name} --sourcecode
-` 
-    f((d) => console.log(helpMessage) )   
+program
+  .version(pkg.version)
+  .option('-t, --temp',    'show temperature in celcius degrees')
+  .option('-w, --weather', 'show weather in Denmark (Odense)')
+  .parse(process.argv)
+
+if (program.temp) {
+    require('./lib/weather') ( data => console.log(data.weather.temp) )
 }
 
-if(argv.temp)
-    f(d => console.log(d.weather.temp) )   
 
-if(argv.version)
-    f(d => console.log(pkg.version) )   
-
-if(argv.sourcecode)
-    f(d => console.log(d.program.sourcecode) )   
+if (program.weather) {
+    require('./lib/weather') ( data => console.log(data.weather) )
+}
