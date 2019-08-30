@@ -13,18 +13,11 @@
 [![Build Status](https://dev.azure.com/superusers-kursus/nodejs/_apis/build/status/danmark-weather-info?branchName=master)](https://dev.azure.com/superusers-kursus/nodejs/_build/latest?definitionId=36&branchName=master)
 
 
-## Install
+## Install and Use
 
 ```
-npm install danmark-weather-info
+npm install danmark-weather-info --global
 
-```
-
-## Use from PowerShell
-
-```
-$weather = node -p "require('danmark-weather-info')"
-
-echo $weather
+danmark-weather-info --help
 
 ```
