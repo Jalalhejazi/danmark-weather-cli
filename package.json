@@ -1,7 +1,7 @@
 {
   "name": "superusers-semversion-demo",
   "description": "using semantic versioning",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
