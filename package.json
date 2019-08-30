@@ -4,7 +4,10 @@
   "version": "2.3.2",
   "main": "cli.js",
   "bin": {
-    "danmark-weather-info": "cli.js"
+    "vejret": "cli.js"
+  },
+  "engines": {
+    "node": ">=10.10.0"
   },
   "dependencies": {
     "minimist": "^1.2.0",
