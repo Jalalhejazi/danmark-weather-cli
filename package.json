@@ -1,7 +1,7 @@
 {
   "name": "danmark-weather-info",
   "description": "danmark weather information",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
