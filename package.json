@@ -1,7 +1,7 @@
 {
   "name": "danmark-weather-info",
   "description": "danmark weather information",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "bin": {
     "danmark-weather-info": "index.js"
   },
