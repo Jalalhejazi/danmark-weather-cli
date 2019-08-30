@@ -1,7 +1,7 @@
 {
   "name": "superusers-semversion-demo",
   "description": "using semantic versioning",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
@@ -18,7 +18,7 @@
     "validation": "yamllint ./azure-pipelines.yml",
     "predeploy": "npm run validation",
     "deploy": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./deploy.ps1",
-    "devops-status":"powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
+    "devops-status": "powershell -NoProfile -ExecutionPolicy Unrestricted -Command  ./devops.ps1"
   },
   "keywords": [
     "semantic versioning"
