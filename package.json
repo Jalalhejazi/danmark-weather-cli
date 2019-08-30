@@ -2,7 +2,7 @@
   "name": "superusers-semversion-demo",
   "author": "Jalal Hejazi <jalal.hejazi@gmail.com>",
   "description": "using semantic versioning",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
