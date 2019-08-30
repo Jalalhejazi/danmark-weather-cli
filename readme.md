@@ -18,8 +18,5 @@
 ```
 npm install danmark-weather-info --global
 
- $ weather --help                                                                 Usage: cli [options]                                                             
- 
- Options:                                                                         -V, --version  output the version number                                         -t, --temp     show temperature in celcius degrees                               -w, --weather  show weather in Denmark (Odense)                                  -h, --help     output usage information                 
+$ weather --help           
 ```
-
