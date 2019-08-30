@@ -1,7 +1,7 @@
 {
   "name": "danmark-weather-info",
   "description": "danmark weather information",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "main": "cli.js",
   "bin": {
     "weather": "cli.js"
