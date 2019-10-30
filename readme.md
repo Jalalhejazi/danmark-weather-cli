@@ -20,3 +20,10 @@ npm install danmark-weather-info --global
 
 $ weather --help           
 ```
+
+## Just Run without install 
+
+```
+npx danmark-weather-info --help
+npx danmark-weather-info --details
+```
