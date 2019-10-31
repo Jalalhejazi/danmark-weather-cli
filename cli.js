@@ -9,7 +9,9 @@ program
   .option('-d, --details', 'show weather in Denmark (Odense)')
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-a, --automation', 'show npm script automation')
+  .option('-i, --info', 'show information about the dev team')
   .parse(process.argv)
+
 
 if (program.temp) {
     require('./lib/weather') ( data => console.log(data.weather.temp) )
@@ -28,4 +30,8 @@ if (program.sourcecode) {
 
 if (program.automation) {
     console.log(pkg.scripts)
+}
+
+if (program.info) {
+    console.log(pkg.author)
 }
