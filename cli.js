@@ -10,8 +10,7 @@ program
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-a, --automation', 'show npm script automation')
   .option('-i, --info', 'show information about the dev team')
-  .option('-b, --bitzer', 'demo feauture for Bitzer')
-  
+    
   .parse(process.argv)
 
 
