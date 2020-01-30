@@ -1,6 +1,8 @@
-require('./lib/weather') ( test => {
+const source  = require('./lib/weather') 
 
-    if (test.weather.location == 'DK') {
+source.weather( test => {
+
+    if (test.weather.location == 'Odense') {
         console.log("Test is OK")
     }else {
         console.log("Test Not OK")
