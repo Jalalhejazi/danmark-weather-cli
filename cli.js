@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
-const program = require('commander');
-const pkg     = require('./package');
+const program  = require('commander');
+const pkg      = require('./package');
+const source   = require('./lib/weather')
 
 program
   .version(pkg.version)
   .option('-t, --temp',    'show temperature in celcius degrees')
   .option('-d, --details', 'show weather in Denmark (Odense)')
+  .option('-c, --city cityName', 'show weather in any city')
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-a, --automation', 'show npm script automation')
   .option('-i, --info', 'show information about the dev team')
@@ -15,12 +17,15 @@ program
 
 
 if (program.temp) {
-    require('./lib/weather') ( data => console.log(data.weather.temp) )
+    source.weather(data => console.log(data.weather.temp) )
 }
 
-
 if (program.details) {
-    require('./lib/weather') ( data => console.log(data.weather) )
+    source.weather( data => console.log(data.weather) )
+}
+
+if  (program.city) {
+    source.weather_by_city(  program.args , data  => console.log(data) )
 }
 
 
@@ -35,8 +40,4 @@ if (program.automation) {
 
 if (program.info) {
     console.log(pkg.author)
-}
-
-if (program.bitzer) {
-    console.log("Bitzer electronics demo")
 }
