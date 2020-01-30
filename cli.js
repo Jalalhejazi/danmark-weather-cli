@@ -25,7 +25,13 @@ if (program.details) {
 }
 
 if  (program.city) {
-    source.weather_by_city(  program.args , data  => console.log(data) )
+    let city = 'odense'
+    if (program.args.length !== 0){
+        city = program.args
+    }
+
+    source.weather_by_city(  city , data  => console.log(data) )
+    
 }
 
 
