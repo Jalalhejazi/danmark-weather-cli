@@ -7,7 +7,7 @@ const source   = require('./lib/weather')
 program
   .version(pkg.version)
   .option('-t, --temp',    'show temperature in celcius degrees')
-  .option('-d, --details', 'show weather in Denmark (Odense)')
+  .option('-d, --details', 'show weather in Denmark (--city Odense)')
   .option('-c, --city cityName', 'show weather in any city')
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-a, --automation', 'show npm script automation')
