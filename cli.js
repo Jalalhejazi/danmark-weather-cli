@@ -12,9 +12,13 @@ program
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-a, --automation', 'show npm script automation')
   .option('-i, --info', 'show information about the dev team')
+  .option('-x, --xtra', 'Just to make any change')
     
   .parse(process.argv)
 
+if( program.xtra ) {
+   console.log("Just to have fun ....")
+}
 
 if (program.temp) {
     source.weather(data => console.log(data.weather.temp) )
