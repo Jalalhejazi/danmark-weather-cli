@@ -10,7 +10,6 @@ program
   .option('-d, --details', 'show weather in Denmark (--city Odense)')
   .option('-c, --city cityName', 'show weather in any city')
   .option('-s, --sourcecode', 'show sourcecode repo')
-  .option('-a, --automation', 'show npm script automation')
   .option('-i, --info', 'show information about the dev team')
   
     
