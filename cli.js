@@ -11,9 +11,17 @@ program
   .option('-c, --city cityName', 'show weather in any city')
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-i, --info', 'show information about the dev team')
+  .option('-x, --xtra', 'show some xtra data')
+
   
     
   .parse(process.argv)
+
+
+if (program.xtra) {
+    console.log("xtra feature in the future") 
+}
+
 
 if (program.temp) {
     source.weather(data => console.log(data.weather.temp) )
