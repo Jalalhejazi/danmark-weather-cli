@@ -1,7 +1,7 @@
 {
   "name": "danmark-weather-info",
   "description": "danmark weather information",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "main": "cli.js",
   "bin": {
     "weather": "cli.js"
@@ -17,7 +17,7 @@
     "yaml-lint": "^1.2.4"
   },
   "scripts": {
-    "zoo" : "",
+    "zoo": "",
     "test": "node test.js",
     "start": "node cli.js --help",
     "version-production": "npm view ./package.json version",
