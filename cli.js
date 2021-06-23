@@ -12,10 +12,15 @@ program
   .option('-s, --sourcecode', 'show sourcecode repo')
   .option('-i, --info', 'show information about the dev team')
   .option('-x, --xtra', 'show some xtra data')
+  .option('-z, --zoo', 'animal test')
 
   
     
   .parse(process.argv)
+
+if (program.zoo) {
+    console.log("Zoo feature in the future ...") 
+}
 
 
 if (program.xtra) {
