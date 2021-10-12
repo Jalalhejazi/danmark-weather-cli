@@ -27,3 +27,8 @@ $ weather --help
 npx danmark-weather-info --help
 npx danmark-weather-info --details
 ```
+
+
+## Vulnerabilities !?
+
+- https://snyk.io/vuln/npm:danmark-weather-info
