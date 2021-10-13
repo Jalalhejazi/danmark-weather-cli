@@ -17,7 +17,6 @@
     "yaml-lint": "^1.2.4"
   },
   "scripts": {
-    "zoo": "",
     "test": "node test.js",
     "start": "node cli.js --help",
     "version-production": "npm view ./package.json version",
