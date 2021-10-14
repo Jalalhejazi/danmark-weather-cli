@@ -18,15 +18,13 @@
 ```
 npm install danmark-weather-info --global
 
-$ weather --help           
+weather --help
+
+weather --city aalborg
+
 ```
 
-## Just Run without install 
 
-```
-npx danmark-weather-info --help
-npx danmark-weather-info --details
-```
 
 
 ## Vulnerabilities !?
