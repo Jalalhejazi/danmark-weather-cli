@@ -2,9 +2,9 @@
 
 - Shows very simple and basic weather in Denmark 
 
-- using Azure DevOps pipeline 
+- Azure DevOps pipeline (Package Automation) 
 
-- using powershell automation 
+- Powershell | pipeline YAML |  npm Registry | Semantic Versioning | Vulnerabilities Scanning 
 
 
 
